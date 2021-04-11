@@ -5,28 +5,28 @@ based on the letters of a keyword. It employs a form of polyalphabetic substitut
 # Installation
 This library uses python3 which can be download from [here](). After installing python, use pip to install the package.
 ```
-$ pip install .
+$ pip install vigenere
 ```
 No external dependencies required in this version.
 
 # Quick Start
 Open the python shell and begin encrypting and decrypting texts with only 4 lines of commands.
 ```python
->>> from . import encrypt, decrypt, random_key
+>>> from vigenere import encrypt, decrypt, random_key
 >>> cipher_key:str = random_key() # one can even use user-defined key such as `qwerty`
 >>> cipher = encrypt('hello world', cipher_key) # with random_key function, cipher may vary everytime you run a program.
 >>> decrypt(cipher, cipher_key)
 'hello world'
 ```
 
-Read the documention of the program this command
+Read the documention of the library
 ```
 $ python
 Python 3.9.0
 Type "help", "copyright", "credits" or "license" for more information.
->>> import .
->>> help(.)
-Help on package .:
+>>> import vigenere
+>>> help(vigenere)
+Help on package vigenere:
 
 NAME
     vigenere
@@ -66,7 +66,7 @@ FUNCTIONS
 -- More  --
 ```
 
-_WARNING:_ DO NOT USE THIS LIBRARY FOR ANY OFFICIAL PURPOSES, BECAUSE THIS IS FOR EDUCATIONAL USE ONLY. I WILL NOT BE RESPONSIBLE IF YOU USE THIS FOR ENCRYPTING CONFIDENTIAL DOCUMENTS OR MESSAGES AND LATER GETTING IT LEAKED.
+_WARNING:_ DO NOT USE THIS LIBRARY FOR ANY OFFICIAL PURPOSES, BECAUSE THIS IS FOR EDUCATIONAL USE ONLY. I WILL NOT BE RESPONSIBLE IF YOU USE THIS FOR ENCRYPTING CONFIDENTIAL DOCUMENTS OR MESSAGES.
 
 # License
-This library falls under MIT License, for information read [this]().
+[MIT License]()
