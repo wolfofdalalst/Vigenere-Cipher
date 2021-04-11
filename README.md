@@ -3,7 +3,7 @@ The Vigenere cipher is a method of encrypting alphabetic text by using a series 
 based on the letters of a keyword. It employs a form of polyalphabetic substitution.
 
 # Installation
-This library uses python3 which can be download from [here](). After installing python, use pip to install the package.
+This library uses python3 which can be download from [here](https://www.python.org/). After installing python, use pip to install the package.
 ```
 $ pip install vigenere
 ```
@@ -69,4 +69,4 @@ FUNCTIONS
 _WARNING:_ DO NOT USE THIS LIBRARY FOR ANY OFFICIAL PURPOSES, BECAUSE THIS IS FOR EDUCATIONAL USE ONLY. I WILL NOT BE RESPONSIBLE IF YOU USE THIS FOR ENCRYPTING CONFIDENTIAL DOCUMENTS OR MESSAGES.
 
 # License
-[MIT License]()
+[MIT License](https://raw.githubusercontent.com/GuptaAyush19/Vigenere-Cipher/master/LICENSE)
