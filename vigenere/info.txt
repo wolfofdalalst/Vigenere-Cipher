@@ -1,6 +1,5 @@
-The Vigenere cipher is a method of encrypting alphabetic text by using a
-series of interwoven Caesar ciphers, based on the letters of a keyword. It employs a form of polyalphabetic 
-substitution
+The Vigenere cipher is a method of encrypting alphabetic text by using a series of interwoven Caesar ciphers, 
+based on the letters of a keyword. It employs a form of polyalphabetic substitution.
 
 First described by Giovan Battista Bellaso in 1553, the cipher is easy to understand and implement, but it 
 resisted all attempts to break it until 1863, three centuries later. This earned it the description le 

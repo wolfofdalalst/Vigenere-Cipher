@@ -1,5 +1,5 @@
-import argparse as _argparse
+from . import __doc__, __version__
 
-parser = _argparse.ArgumentParser(description="Vigenere Cipher")
+# TODO: Add Command Line interface in future updates
 
-args = parser.parse_args()
+print(__doc__)
