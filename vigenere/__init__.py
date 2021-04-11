@@ -15,4 +15,4 @@ In the 19th century the scheme was misattributed to Blaise de Vigenere (1523-159
 __all__ = ["decrypt", "encrypt", "randint", "random_key", "valid_key"]
 __author__ = "Ayush Gupta; https://github.com/GuptaAyush19/"
 __license__ = "MIT License"
-__version__ = "1.0.3"
+__version__ = "1.0.4"
