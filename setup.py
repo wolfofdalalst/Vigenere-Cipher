@@ -14,7 +14,7 @@ setup(
     description="Encrypt strings using Vigenere Cipher",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="",
+    url="https://github.com/GuptaAyush19/Vigenere-Cipher",
     author="Ayush Gupta",
     author_email="darthvader01502@gmail.com",
     license="MIT",
