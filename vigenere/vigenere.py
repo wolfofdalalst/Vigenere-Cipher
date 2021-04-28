@@ -1,4 +1,8 @@
 from .random import randint
+from base64 import (
+    b64encode as _b64encode,
+    b64decode as _b64decode
+)
 
 def valid_key(key: str):
     """Checks if the user-key is valid, otherwise returns True
@@ -55,28 +59,37 @@ def _transform(string:str, key:str, mode = "encrypt") -> str:
             
     return transform_text
 
-def encrypt(plain_text: str, key:str) -> str:
+def encrypt(plain_text: str, key:str, base64=True) -> str:
     """Encrypt strings using Vigenere Cipher
 
     Args:
         plain_text (str): Plain text that needs to be encrypted
         key (str): Key for vigenere cipher
+        base64 (bool): If true, will return the encoded base64 string of the cipher.
+        Defaults to True.
         
         Use `random_key()` to generate a key
 
     Returns:
-        str: Cipher Text
+        str: Cipher Text encoded to base64
     """
-    return str(_transform(plain_text, key, mode="encrpyt"))
+    cipher = str(_transform(plain_text, key, mode="encrpyt"))
+    if base64:
+        return _b64encode(cipher.encode()).decode()
+    return cipher
 
-def decrypt(cipher: str, key: str) -> str:
+def decrypt(cipher: str, key: str, base64=True) -> str:
     """Decrypt strings using Vigenere Cipher
 
     Args:
-        cipher (str): Encrypted plain text that needs to be decrypted
+        cipher (str): Encrypted plain text that needs to be decrypted.
         key (str): Key for vigenere cipher
+        base64 (bool): Set to true if the cipher text is encoded in base64.
+        Defaults to True.
 
     Returns:
-        str: Decipher Text
+        str: Deciphered Text
     """
+    if base64:
+        cipher = _b64decode(cipher.encode()).decode()
     return str(_transform(cipher, key, mode="decrypt"))
