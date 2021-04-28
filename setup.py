@@ -24,11 +24,11 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.9",
     ],
-    packages=find_packages(exclude=("tests")),
+    packages=find_packages(exclude=("tests",)),
     include_package_data=True,
     entry_points={
         "console_scripts": [
-            "realpython=vigenere.__main__:main",
+            "vigenere=vigenere.__main__:main",
         ]
     },
 )
