@@ -1,4 +1,8 @@
 # Vigenere Cipher
+![](https://img.shields.io/pypi/pyversions/vigenere)
+![](https://img.shields.io/pypi/v/vigenere)
+![](https://img.shields.io/pypi/dm/vigenere)
+
 The Vigenere cipher is a method of encrypting alphabetic text by using a series of interwoven Caesar ciphers, 
 based on the letters of a keyword. It employs a form of polyalphabetic substitution.
 
