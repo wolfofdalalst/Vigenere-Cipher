@@ -47,10 +47,11 @@ def _transform(string:str, key:str, mode = "encrypt") -> str:
     
     for char in string:
         if mode.startswith("en"):
-            transform_text += chr(ord(char)+ord(key[key_index]))
+            transform_text += chr((ord(char)+ord(key[key_index]))%0x110000)
+            # by taking the modulus, we handle wrap arounds
                 
         elif mode.startswith("de"):
-            transform_text += chr(ord(char)-ord(key[key_index]))
+            transform_text += chr((ord(char)-ord(key[key_index]))%0x110000)
         else:
             print(mode)
             raise TypeError("Not a valid arguement for `mode`")  

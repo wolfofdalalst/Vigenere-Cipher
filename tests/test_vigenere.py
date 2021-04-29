@@ -11,7 +11,7 @@ class TestVigenere(unittest.TestCase):
         
     @staticmethod
     def random_text(size=20):
-        text_list = [chr(random.randint(43, 200)) for i in range(size)]
+        text_list = [chr(random.randint(0x21, 0x7e)) for i in range(size)]
         return "".join(text_list)
         
     def test_valid_key(self):
