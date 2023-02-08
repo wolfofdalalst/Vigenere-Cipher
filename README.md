@@ -7,14 +7,14 @@ The Vigenere cipher is a method of encrypting alphabetic text by using a series 
 based on the letters of a keyword. It employs a form of polyalphabetic substitution.
 
 ## Installation
-This library uses python3 which can be download from [here](https://www.python.org/). After installing python, use pip to install the package.
+This library uses python3 which can be downloaded from [here](https://www.python.org/). After installing python, use pip to install the package.
 ```
 $ pip install vigenere
 ```
 No external dependencies required in this version.
 
 ## Quick Start
-Open the python shell and begin encrypting and decrypting texts with only 4 lines of commands.
+Open the python shell and begin encrypting and decrypting texts with only 4 lines of code.
 ```python
 >>> from vigenere import encrypt, decrypt, random_key
 >>> cipher_key:str = random_key() # one can even use user-defined key such as `qwerty`
@@ -30,7 +30,7 @@ encrypt(..agrs, base64=True) # returns base64 string
 encrypt(..args, base64=False) # returns string of unicode chrs
 ```
 
-Read the documention of the library
+Read the documentation of the library
 ```
 $ python
 Python 3.9.0
